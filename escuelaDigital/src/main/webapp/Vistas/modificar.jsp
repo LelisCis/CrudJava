@@ -70,7 +70,7 @@
 
                     <div class="mb-3">
                         <label for="id" class="form-label">ID:</label>
-                        <input type="hidden" class="form-control" id="id" name="id"  value=<%= resultado.getId()%> />
+                        <input type="hidden" class="form-control" id="id" name="id"  value="<%= resultado.getId()%>" />
                     </div>
                     
                     <div class="mb-3">
@@ -83,7 +83,7 @@
                     </div>
                      <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" name="email" value=""<%= resultado.getEmail()%>" />
+                        <input type="text" class="form-control" id="email" name="email" value="<%= resultado.getEmail()%>" />
                     </div>
                      <div class="mb-3">
                         <label for="telefono" class="form-label">Telefono</label>

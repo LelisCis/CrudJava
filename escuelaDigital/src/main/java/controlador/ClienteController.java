@@ -40,10 +40,22 @@ import modelo.ClientesDAO;
                 Clientes cliente = new Clientes(id,nombre,apellido,email, tl);
                 clientesDao.actualizarCliente(cliente);
                 dispatcher = request.getRequestDispatcher("Vistas/clientes.jsp");
-                
-                
-            }
-       
+            }else if(accion.equals("nuevo")){
+            dispatcher = request.getRequestDispatcher("Vistas/nuevo.jsp");
+            }else if(accion.equals("insert")){
+                String nombre = request.getParameter("nombre");
+                String apellido = request.getParameter("apellido");
+                String email = request.getParameter("email");
+                String telefono = request.getParameter("telefono");
+               int tl = Integer.parseInt(telefono);
+               Clientes cliente =  new Clientes(0, nombre, apellido, email, tl);
+               clientesDao.insertarCliente(cliente);
+               dispatcher = request.getRequestDispatcher("Vistas/clientes.jsp");
+            }else if(accion.equals("eliminar")){
+                int id = Integer.parseInt(request.getParameter("id"));
+                clientesDao.eliminarCliente(id);
+                dispatcher = request.getRequestDispatcher("Vistas/clientes.jsp");
+            }     
             dispatcher.forward(request, response);
     }
    
@@ -51,9 +63,7 @@ import modelo.ClientesDAO;
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             doGet(request, response);
-       
     }
-
     
     @Override
     public String getServletInfo() {
