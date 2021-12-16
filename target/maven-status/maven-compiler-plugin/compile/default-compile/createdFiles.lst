@@ -1,4 +1,0 @@
-config\Conexion.class
-controlador\ClienteController.class
-modelo\ClientesDAO.class
-modelo\Clientes.class
