@@ -8,7 +8,7 @@ public class Conexion {
         Connection c = null;
         try{
             Class.forName(driver);
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/comision2160",
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/baselelis",
                     "root","");
         }catch(ClassNotFoundException | SQLException error){
             System.out.println(error.toString());
