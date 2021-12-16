@@ -65,6 +65,10 @@
         <div class="container">
              <div class="row d-flex justify-content-center shadow p-3 mb-5 rounded mt-5 col-sm-8 col-md-8 col-lg-6 contenedor">
                 <form class="p-5" action="ClienteController?accion=insert" method="POST">
+                     <div class="text-center">
+                    <img src="https://img.icons8.com/ios/50/ffffff/add-user-male.png"/>                  
+                  </div>
+                    
                     <h1 class="mt-3 mb-3 text-center text-uppercase text-white fs-3">Formulario de registro</h1>
 
                     <div class="mb-3">
