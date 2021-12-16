@@ -74,7 +74,11 @@
      <div class="container">
              <div class="row d-flex justify-content-center shadow p-3 mb-5 rounded mt-5 col-sm-8 col-md-8 col-lg-6 contenedor">
                 <form class=" p-5" action="ClienteController?accion=actualizar" method="POST">
-                <h1 class="mt-3 mb-3 text-center text-uppercase fs-3 text-white">Modificar registro</h1>
+                  <div class="text-center">
+                    <img src="https://img.icons8.com/ios-glyphs/50/ffffff/refresh--v2.png"/>
+                  </div>
+                    <h1 class="mt-3 text-center text-uppercase fs-3 text-white">Modificar registro</h1>
+                
 
                     <div class="mb-3">
                         <label for="id" class="form-label"></label>
